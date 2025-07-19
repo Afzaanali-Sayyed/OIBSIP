@@ -1,1 +1,70 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OIBSIP Task Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  border: 2px solid #1e293b;
+  border-radius: 10px;
+  background-color: #1e293b;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #38bdf8;
+}
+
+.task-links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task {
+  text-decoration: none;
+  color: #facc15;
+  background-color: #0f766e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.task:hover {
+  background-color: #134e4a;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>OIBSIP Task Dashboard</h1>
+    <p>Select a task to view:</p>
+    <div class="task-links">
+      <a href="first_task/index.html" class="task">First Task</a>
+      <a href="second_task/index.html" class="task">Second Task</a>
+      <a href="third_task/index.html" class="task">Third Task</a>
+      <a href="fourth_task/index.html" class="task">Fourth Task</a>
+    </div>
+  </div>
+</body>
+</html>
