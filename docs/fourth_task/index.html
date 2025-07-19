@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Auth System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      color: #333;
+      text-align: center;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 12px 12px 42px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      transition: border 0.2s;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+
+    .input-group input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .link-text {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .link-text a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .link-text a:hover {
+      text-decoration: underline;
+    }
+
+    #dashboard {
+      display: none;
+      text-align: center;
+    }
+
+    .welcome-msg {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    @media (max-width: 450px) {
+      .container {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 id="formTitle">Login</h2>
+
+    <!-- Login Form -->
+    <div id="loginForm">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="loginUser" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="loginPass" placeholder="Password" required>
+      </div>
+      <button onclick="login()">Login</button>
+      <div class="link-text">Don't have an account? <a href="#" onclick="toggleForm('register')">Register</a></div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="registerForm" style="display: none;">
+      <div class="input-group">
+        <i class="fas fa-user-plus"></i>
+        <input type="text" id="registerUser" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="registerPass" placeholder="Password" required>
+      </div>
+      <button onclick="register()">Register</button>
+      <div class="link-text">Already have an account? <a href="#" onclick="toggleForm('login')">Login</a></div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard">
+      <div class="welcome-msg">Welcome, <strong><span id="userDisplay"></span></strong>!</div>
+      <p>You have successfully logged in.</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleForm(type) {
+      document.getElementById('loginForm').style.display = type === 'login' ? 'block' : 'none';
+      document.getElementById('registerForm').style.display = type === 'register' ? 'block' : 'none';
+      document.getElementById('dashboard').style.display = 'none';
+      document.getElementById('formTitle').textContent = type === 'login' ? 'Login' : 'Register';
+    }
+
+    function register() {
+      const username = document.getElementById('registerUser').value.trim();
+      const password = document.getElementById('registerPass').value;
+
+      if (!username || !password) {
+        alert('Please fill out all fields.');
+        return;
+      }
+
+      if (localStorage.getItem(username)) {
+        alert('User already exists.');
+        return;
+      }
+
+      localStorage.setItem(username, password);
+      alert('Registration successful. You can now login.');
+      toggleForm('login');
+    }
+
+    function login() {
+      const username = document.getElementById('loginUser').value.trim();
+      const password = document.getElementById('loginPass').value;
+
+      const storedPass = localStorage.getItem(username);
+      if (storedPass === password) {
+        sessionStorage.setItem('loggedInUser', username);
+        showDashboard(username);
+      } else {
+        alert('Invalid username or password.');
+      }
+    }
+
+    function showDashboard(username) {
+      document.getElementById('loginForm').style.display = 'none';
+      document.getElementById('registerForm').style.display = 'none';
+      document.getElementById('dashboard').style.display = 'block';
+      document.getElementById('formTitle').textContent = 'Dashboard';
+      document.getElementById('userDisplay').textContent = username;
+    }
+
+    function logout() {
+      sessionStorage.removeItem('loggedInUser');
+      toggleForm('login');
+    }
+
+    window.onload = () => {
+      const user = sessionStorage.getItem('loggedInUser');
+      if (user) showDashboard(user);
+      else toggleForm('login');
+    };
+  </script>
+
+</body>
+</html>
