@@ -44,8 +44,6 @@ Try it live here 👉 [GitHub Pages Link](https://Afzaanali-Sayyed.github.io/OIB
 ## 👨‍💻 Author
 Afzaan Ali Sayyed
 
-🔗 GitHub Repository [view here](https://Afzaanali-Sayyed.github.io/OIBSIP) 
-
 
 
 
