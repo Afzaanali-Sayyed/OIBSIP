@@ -47,7 +47,5 @@ Afzaan Ali Sayyed
 🔗 GitHub Repository [view here](https:Afzaanali-Sayyed//.github.io/OIBSIP/) 
 
 
-🔗 LinkedIn 
-
 
 
