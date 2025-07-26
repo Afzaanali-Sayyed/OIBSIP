@@ -38,7 +38,7 @@ A simple and functional **To-Do Web App** that allows users to manage their dail
 
 ## 📸 Demo
 
-🔗 [Click here to view the live demo](https://Afzaanali-Sayyed.github.io/OIBSIP/third_task/)  
+Check out the live version here 👉(https://Afzaanali-Sayyed.github.io/OIBSIP/third_task/)  
 
 ---
 
