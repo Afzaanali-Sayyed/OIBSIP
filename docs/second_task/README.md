@@ -42,7 +42,6 @@ Try it live here 👉 (https://Afzaanali-Sayyed.github.io/OIBSIP/second_task/)
 ## 👤 Author
 
 **Afzaan Ali Sayyed**  
-📎 GitHub Repository: (https://Afzaanali-Sayyed.github.io/OIBSIP/)
 
 ---
 
