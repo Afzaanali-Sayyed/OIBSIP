@@ -1,61 +1,53 @@
-🧮 Calculator Web App
-A simple and responsive web-based calculator that performs basic arithmetic operations — Addition, Subtraction, Multiplication, and Division. This app is built using HTML, CSS, and JavaScript.
+# 🧮 Calculator Web App
 
-🚀 Features
-Basic arithmetic operations: +, -, ×, ÷
+A **simple and responsive** web-based calculator that performs **basic arithmetic operations** — Addition, Subtraction, Multiplication, and Division.  
+This app is built using **HTML, CSS, and JavaScript**.
 
-Clear button to reset input
+---
 
-Keyboard input support (optional if implemented)
+## 🚀 Features
 
-Mobile-responsive layout
+- ➕ Addition, ➖ Subtraction, ✖️ Multiplication, ➗ Division
+- 🧼 Clear button to reset input
+- ⌨️ (Optional) Keyboard input support
+- 📱 Mobile-responsive layout
+- ✨ Clean and modern UI
 
-Clean and modern UI
+---
 
-🛠️ Technologies Used
-HTML5 – Markup structure
+## 🛠️ Technologies Used
 
-CSS3 – Styling and layout
+| Technology   | Purpose                |
+|--------------|------------------------|
+| **HTML5**     | Markup structure       |
+| **CSS3**      | Styling and layout     |
+| **JavaScript**| Logic & event handling |
 
-JavaScript – Logic for operations and event handling
+---
 
-📸 Screenshots
-(Add screenshots of the calculator UI here)
+---
 
-💻 Live Demo
-You can try it live here:
-🔗 GitHub Pages Link (replace with your actual link)
+## 💻 Live Demo
 
-🧾 How to Use
-Open the app in a browser.
+Try it live here 👉 [GitHub Pages Link](https://Afzaanali-Sayyed.github.io/OIBSIP/first-task/)  
+*(Replace with your actual deployed URL)*
 
-Click on the number and operator buttons to perform calculations.
+---
 
-Use C to clear the screen.
+## 🧾 How to Use
 
-Press = to get the result.
+1. Open the app in your browser.
+2. Click on number and operator buttons to perform calculations.
+3. Press `C` to clear the screen.
+4. Press `=` to get the result.
 
-📂 Project Structure
-pgsql
-Copy
-Edit
-calculator-app/
-├── index.html
-├── style.css
-└── script.js
-📌 Setup Instructions
-To run the project locally:
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/calculator-app.git
-cd calculator-app
-open index.html
-🧑‍💻 Author
+## 👨‍💻 Author
 Afzaan Ali Sayyed
-🔗 LinkedIn
-🔗 GitHub
 
-🪪 License
-This project is open source and available under the MIT License.
+🔗 GitHub Repository [](https:Afzaanali-Sayyed//.github.io/OIBSIP/) 
+🔗 LinkedIn 
+
+
+
