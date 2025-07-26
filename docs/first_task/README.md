@@ -25,12 +25,10 @@ This app is built using **HTML, CSS, and JavaScript**.
 
 ---
 
----
 
 ## 💻 Live Demo
 
-Try it live here 👉 [GitHub Pages Link](https://Afzaanali-Sayyed.github.io/OIBSIP/first-task/)  
-*(Replace with your actual deployed URL)*
+Try it live here 👉 [GitHub Pages Link](https://Afzaanali-Sayyed.github.io/OIBSIP/first_task/)  
 
 ---
 
@@ -46,7 +44,9 @@ Try it live here 👉 [GitHub Pages Link](https://Afzaanali-Sayyed.github.io/OIB
 ## 👨‍💻 Author
 Afzaan Ali Sayyed
 
-🔗 GitHub Repository [](https:Afzaanali-Sayyed//.github.io/OIBSIP/) 
+🔗 GitHub Repository [view here](https:Afzaanali-Sayyed//.github.io/OIBSIP/) 
+
+
 🔗 LinkedIn 
 
 
