@@ -25,7 +25,7 @@ A beautifully crafted and responsive tribute page honoring a legendary personali
 
 ## 🌍 Live Demo
 
-Try it live here 👉 [view here](https://Afzaanali-Sayyed.github.io/OIBSIP/second_task/)
+Try it live here 👉 (https://Afzaanali-Sayyed.github.io/OIBSIP/second_task/)
 
 
 ---
