@@ -28,7 +28,7 @@ This app is built using **HTML, CSS, and JavaScript**.
 
 ## 💻 Live Demo
 
-Try it live here 👉 [GitHub Pages Link](https://Afzaanali-Sayyed.github.io/OIBSIP/first_task/)  
+Try it live here 👉 (https://Afzaanali-Sayyed.github.io/OIBSIP/first_task/)  
 
 ---
 
