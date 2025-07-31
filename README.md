@@ -60,6 +60,6 @@ Grateful to [**Oasis Infobyte**] for the opportunity and mentorship provided dur
 **Afzaan Ali Sayyed**  
 Email: sayyedafzaanali@gmail.com 
 
-GitHub: [github repository](https://github.com/Afzaanali-Sayyed/OIBSIP)
+GitHub: [github repository](https://afzaanali-sayyed.github.io/OIBSIP/)
   
 LinkedIn:[Linked in Profile](https://www.linkedin.com/in/afzaan-ali-sayyed-31750436b)
